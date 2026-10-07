@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enkodprime.github.io/sitemap.xml
+Sitemap: https://enkodprime.github.io/Playground_NN_architectures/sitemap.xml

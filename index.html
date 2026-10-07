@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnkodPrime — Projects</title>
+<meta name="description" content="Interactive machine-learning projects that run in the browser: neural network and autoencoder playgrounds for power-line signals, a comfort-zone heating playground and a weighted map of the mathematics behind ML.">
+<link rel="canonical" href="https://enkodprime.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EnkodPrime — Projects">
+<meta property="og:description" content="Interactive machine-learning projects that run in the browser.">
+<meta property="og:url" content="https://enkodprime.github.io/">
+<meta property="og:image" content="https://enkodprime.github.io/img/logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="img/logo.png">
+<style>
+  :root {
+    --bg: #f4f6f8; --card: #ffffff; --ink: #1d2b38; --muted: #5b6873; --line: #e3e9f1;
+    --bar: #2f3f4f; --orange: #c2760f; --blue: #2b6cb0; --chip: #eef3f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151d25; --card: #1d2833; --ink: #e8eef4; --muted: #a6b3bf; --line: #2c3a47; --chip: #243240; --blue: #7fb2e5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--bar); color: #fff; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  .top { display: flex; align-items: center; gap: 14px; padding: 22px 0; }
+  .top img { width: 52px; height: 52px; flex: none; }
+  .top h1 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: .01em; }
+  .top p { margin: 2px 0 0; color: #b6c3cf; font-size: 14px; }
+  main { padding: 28px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 16px;
+    display: flex; flex-direction: column; gap: 10px; }
+  .card h2 { margin: 0; font-size: 17px; font-weight: 600; }
+  .card p { margin: 0; color: var(--muted); flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags span { background: var(--chip); color: var(--muted); border-radius: 999px; padding: 2px 9px; font-size: 12px; }
+  .links { display: flex; gap: 14px; font-size: 14px; font-weight: 600; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links a.open { color: var(--orange); }
+  footer { padding: 26px 0 34px; color: var(--muted); font-size: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <img src="img/logo.png" alt="EnkodPrime logo">
+    <div>
+      <h1>Projects</h1>
+      <p>Interactive machine-learning experiments that run in the browser</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <article class="card">
+      <h2>NN Architecture Playground</h2>
+      <p>Nine neural network architectures — MLP, CNN, ResNet-1D, InceptionTime, RNN / LSTM, S4 / Mamba, GNN,
+        Transformer and KAN — learn to classify power-line disturbances, with every weight, activation and
+        calculation shown.</p>
+      <div class="tags"><span>time series</span><span>classification</span><span>JavaScript</span></div>
+      <div class="links">
+        <a class="open" href="https://enkodprime.github.io/Playground_NN_architectures/">Open</a>
+        <a href="https://github.com/EnkodPrime/Playground_NN_architectures">Source</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Autoencoder Playground</h2>
+      <p>MLP, convolutional, LSTM and masked Transformer autoencoders learn what normal mains voltage looks like
+        and flag anomalies without labels — with the latent space, VAE sampling, compression and few-label
+        experiments.</p>
+      <div class="tags"><span>anomaly detection</span><span>autoencoders</span><span>JavaScript</span></div>
+      <div class="links">
+        <a class="open" href="https://enkodprime.github.io/Playground_NN_architectures/autoencoder.html">Open</a>
+        <a href="https://github.com/EnkodPrime/Playground_NN_architectures">Source</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>NN Comfort Playground</h2>
+      <p>A small neural network learns a home's comfort zone from eight sensors and nothing but occupant votes,
+        then runs the heating in a simulated room with real weather, walls, moisture and people.</p>
+      <div class="tags"><span>smart home</span><span>simulation</span><span>JavaScript</span></div>
+      <div class="links">
+        <a class="open" href="https://enkodprime.github.io/Playground_NN_Comfort/">Open</a>
+        <a href="https://github.com/EnkodPrime/Playground_NN_Comfort">Source</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>The Mathematics Behind ML/AI</h2>
+      <p>An interactive, bilingual (EN / BG) map of 88 mathematical topics, each weighted by how much it matters
+        in real ML work, with formulas, symbol glossaries and worked numeric examples.</p>
+      <div class="tags"><span>mathematics</span><span>learning</span><span>EN / BG</span></div>
+      <div class="links">
+        <a class="open" href="https://enkodprime.github.io/ml-math-map/">Open</a>
+        <a href="https://github.com/EnkodPrime/ml-math-map">Source</a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="wrap">
+  <a href="https://github.com/EnkodPrime">GitHub</a>
+  <a href="https://www.linkedin.com/in/stefan-nikolov-b712a0166">LinkedIn</a>
+</footer>
+</body>
+</html>
